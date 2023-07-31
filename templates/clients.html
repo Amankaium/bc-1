@@ -1,0 +1,14 @@
+<a href="/">Главная</a> |
+<a href="/orders">Список заказов</a> |
+<a href="/clients">Клиенты</a>
+
+<h2>Наши клиенты</h2>
+{% for client in clients %}
+
+    <div>
+        <a href="">
+            {{ client.id }}. {{ client.name }}
+        </a>
+    </div>
+
+{% endfor %}
